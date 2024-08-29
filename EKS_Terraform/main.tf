@@ -96,7 +96,7 @@ resource "aws_eks_cluster" "my-cluster" {
   }
 }
 
-resource "aws_eks_node_group" "my" {
+resource "aws_eks_node_group" "my-cluster" {
   cluster_name    = aws_eks_cluster.my-cluster.name
   node_group_name = "my-node-group"
   node_role_arn   = aws_iam_role.my_node_group_role.arn
