@@ -179,3 +179,4 @@ kubectl create secret docker-registry regcred \
     --docker-server=https://index.docker.io/v1/ \
     --docker-username=ajaydabe \
     --docker-password=Ajay123
+        --namespace=webapps
