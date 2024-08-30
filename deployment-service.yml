@@ -17,7 +17,7 @@ spec:
           image: ajaydabe/bloggingapp:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 8181
       imagePullSecrets:
         - name: regcred
 ---
@@ -31,5 +31,5 @@ spec:
   ports:
     - protocol: "TCP"
       port: 80
-      targetPort: 8080 
+      targetPort: 8181
   type: LoadBalancer
